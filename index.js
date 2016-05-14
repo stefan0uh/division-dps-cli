@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * Created by Stefan Mairbaeurl
+ *
  */
 
 var jsonfile = require('jsonfile')
@@ -38,26 +38,41 @@ for (i = 0; i < 6; i++) {
   }
 }
 
+// Berechnungen
+
+var maxAmorCap = 65
+
+var health = stamina * 30
+var armorReductionPercent = Math.min(Math.max(parseInt(armor * 0.0140), 1), maxAmorCap)
+var effectivHealth = Math.round(health / (1 - armorReductionPercent / (1 + armorReductionPercent)))
+
+var skillpower = electronic * 10
+
+
 console.log('\n-- Main Stats -------')
 console.log('Firearms:', firearms)
 console.log('Stamina:', stamina)
-console.log(' > Health:', stamina * 30)
-console.log(' + Effectiv Health:', Math.round((stamina * 30) / (1 - (armor * 0.00014) / (1 + armor * 0.00014))))
-console.log(' > Armor:', armor, '(' + Math.min(Math.max(parseInt(armor * 0.0140), 1), 65) + '%)')
+console.log(' > Health:', health)
+console.log(' + Effectiv Health:', effectivHealth)
+console.log(' > Armor:', armor, '(' + armorReductionPercent + '%)')
 console.log('\nElectronic:', electronic)
-console.log(' > Skillpower:', electronic * 10)
+console.log(' > Skillpower:', skillpower)
+
 console.log('\n-- Major Stats ------')
 console.log('Crit Chance:', crit + '%')
 console.log('Crit Damage:', critDMG + '%')
+
 console.log("\n-- Weapon's ---------")
 console.log('Primary Weapon:', char.weapon.primary.name)
 console.log(' > Magazin:', char.weapon.primary.mag, '(' + round2two((60 / char.weapon.primary.rof) * char.weapon.primary.mag) + 'sec)')
 console.log(' > Weapon Damage (PVE):', char.weapon.primary.currentDamage)
 console.log(' > Weapon Damage (PVP):', Math.round(char.weapon.primary.currentDamage * 0.4))
+
 console.log('\nSecondary Weapon:', char.weapon.secondary.name)
 console.log(' > Magazin:', char.weapon.secondary.mag, '(' + round2two((60 / char.weapon.secondary.rof) * char.weapon.secondary.mag) + 'sec)')
 console.log(' > Weapon Damage (PVE):', char.weapon.secondary.currentDamage)
 console.log(' > Weapon Damage (PVP):', Math.round(char.weapon.secondary.currentDamage * 0.4))
+
 console.log('\nSidearm Weapon:', char.weapon.sidearm.name)
 console.log(' > Magazin:', char.weapon.sidearm.mag, '(' + round2two((60 / char.weapon.sidearm.rof) * char.weapon.sidearm.mag) + 'sec)')
 console.log(' > Weapon Damage (PVE):', char.weapon.sidearm.currentDamage)
