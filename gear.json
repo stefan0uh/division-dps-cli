@@ -2,28 +2,36 @@
     "equip": [{
         "name": "bodyarmor",
         "armor": 1348,
-        "firearms": 573,
-        "stamina": 129,
+        "stats": {
+            "firearms": 573,
+            "stamina": 129
+        },
         "talent": "reckless",
         "mod": {
-            "slot-1": 1.5
+            "crit": 1.5
         }
     }, {
         "name": "backpack",
-        "armor": 1348,
-        "firearms": 573,
-        "stamina": 129
+        "armor": 1003,
+        "stats": {
+            "firearms": 573,
+            "stamina": 129
+        }
     }, {
         "name": "mask",
         "armor": 386,
-        "stamina": 659,
+        "stats": {
+            "stamina": 659
+        },
         "mod": {
-            "slot-1": 1.5
+            "crit": 1.5
         }
     }, {
         "name": "gloves",
         "armor": 426,
-        "stamina": 511,
+        "stats": {
+            "stamina": 511
+        },
         "talent": "savage",
         "crit": 6.5,
         "critDMG": 36,
@@ -31,34 +39,38 @@
     }, {
         "name": "kneepad",
         "armor": 753,
-        "firearms": 689,
+        "stats": {
+            "firearms": 689
+        },
         "critDMG": 16
     }, {
         "name": "holster",
         "armor": 830,
-        "firearms": 602,
-        "stamina": 533
+        "stats": {
+            "firearms": 602,
+            "stamina": 533
+        }
     }],
     "weapon": {
-        "primarySlot": {
-            "name": "mp5",
-            "currentDamage": 9910,
-            "maxDamage": 130,
-            "rpm": 800,
-            "mag": 32
+        "primary": {
+            "name": "Vector",
+            "currentDamage": 14444,
+            "maxDamage": 165,
+            "rof": 760,
+            "mag": 37
         },
-        "secondarySlot": {
+        "secondary": {
             "name": "M1A",
             "currentDamage": 54888,
             "maxDamage": 620,
-            "rpm": 300,
-            "mag": 10
+            "rof": 300,
+            "mag": 19
         },
-        "sidearmSlot": {
+        "sidearm": {
             "name": "Px4",
             "currentDamage": 7714,
             "maxDamage": 130,
-            "rpm": 450,
+            "rof": 450,
             "mag": 17
         }
     }
