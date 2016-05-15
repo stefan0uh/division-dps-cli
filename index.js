@@ -3,7 +3,6 @@
  *
  */
 
-
 var jsonfile = require('jsonfile')
 var path = require('path')
 
@@ -48,7 +47,6 @@ var armorReductionPercent = Math.min(Math.max(parseInt(armor * 0.0140), 1), maxA
 var effectivHealth = Math.round(health / (1 - armorReductionPercent / (1 + armorReductionPercent)))
 
 var skillpower = electronic * 10
-
 
 console.log('\n-- Main Stats -------')
 console.log('Firearms:', firearms)
