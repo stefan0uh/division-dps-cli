@@ -1,0 +1,131 @@
+{
+    "equip": [{
+        "name": "bodyarmor",
+        "armor": 1503,
+        "stats": {
+            "firearms": 156,
+            "stamina": 520
+        },
+        "major": {
+            "damageToElite": 7
+        },
+        "mod": {
+            "skillHaste": 3
+        },
+        "set": {
+            "striker": true
+        }
+    }, {
+        "name": "backpack",
+        "armor": 1003,
+        "stats": {
+            "firearms": 716
+        },
+        "mod": {
+            "signatureRes": 3
+        },
+        "skill": {
+            "pulseCritDMG": 8,
+            "pulseDuration": 9
+        },
+        "set": {
+            "sentry": true
+        }
+    }, {
+        "name": "mask",
+        "armor": 499,
+        "stats": {
+            "firearms": 153,
+            "stamina": 659
+        },
+        "major": {
+            "skillpower": 4410
+        },
+        "mod": {
+            "skillpower": 1391
+        },
+        "skill": {
+            "supportStationHealingSpeed": 8.5
+        },
+        "set": {
+            "striker": true
+        }
+    }, {
+        "name": "gloves",
+        "armor": 451,
+        "stats": {
+            "firearms": 608
+        },
+        "talent": "savage",
+        "major": {
+            "bonusMarksMan": 2197,
+            "damageToElite": 11,
+            "critChance": 6
+        },
+        "skill": {
+            "turretDamage": 9
+        }
+    }, {
+        "name": "kneepad",
+        "armor": 754,
+        "stats": {
+            "firearms": 689
+        },
+        "major": {
+            "critDMG": 16
+        },
+        "minor": {
+            "bleedResistance": 106,
+            "enemyArmorDamag": 9,
+            "disorientResistance": 28
+        },
+        "skill": {
+            "pulseCritDMG": 8.5
+        },
+        "mod": {
+            "signatureRes": 3
+        },
+        "set": {
+            "sentry": true
+        }
+    }, {
+        "name": "holster",
+        "armor": 470,
+        "stats": {
+            "firearms": 748,
+            "stamina": 583
+        },
+        "major": {
+            "bonusPistol": 325
+        },
+        "mod": {
+            "health": 741
+        },
+        "set": {
+            "striker": true
+        }
+    }],
+    "weapon": {
+        "primary": {
+            "name": "Vector",
+            "currentDamage": 11999,
+            "maxDamage": 165,
+            "rof": 760,
+            "mag": 37
+        },
+        "secondary": {
+            "name": "M1A",
+            "currentDamage": 52788,
+            "maxDamage": 620,
+            "rof": 300,
+            "mag": 19
+        },
+        "sidearm": {
+            "name": "Px4",
+            "currentDamage": 7394,
+            "maxDamage": 130,
+            "rof": 450,
+            "mag": 17
+        }
+    }
+}
