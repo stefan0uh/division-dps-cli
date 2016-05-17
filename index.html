@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Divison Calc</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></head>
+    <style>
+        body {
+            margin: 25px;
+        }
+        </style>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                Main Stats
+            </legend>
+            <input id="firearms" type="number" placeholder="firearms"/><br>
+            <input id="stamina" type="number" placeholder="stamina"/><br>
+            <input id="electronic" type="number" placeholder="electronic"/>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Major Stats
+            </legend>
+            <input id="armor" type="number" placeholder="Armor..." oninput="getArmorPercent(this.value)"/>
+        </fieldset>
+    </form>
+
+    <div>
+        <fieldset>
+            <legend>
+                Survival
+            </legend>
+            <input id="health" type="text" disabled />
+            <label for="health">Health</label><br>
+            <input id="armorPercent" type="text" disabled />
+            <label for="armorPercent">% Armor</label><br>
+            <input id="effectivHealth" type="text" disabled />
+            <label for="effectivHealth">Effectiv Health</label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Abillity
+            </legend>
+             <input id="damagePercent" type="text" disabled />
+            <label for="damagePercent">% Damage Increased by</label><br>
+            <input id="skillpower" type="text" disabled />
+            <label for="skillpower">Skillpower</label><br>
+        </fieldset>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
